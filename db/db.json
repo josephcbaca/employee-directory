@@ -1,0 +1,117 @@
+[
+    {"id": "1",
+        "name": "Chris Squire",
+        "instrument": ["bass", "backing vocals"],
+        "year_joined": 1968,
+        "current_member": false
+    },
+    {"id": "2",
+        "name": "Steve Howe",
+        "instruments": ["guitar", "backing vocals", "lap steel guitar"],
+        "year_joined": 1970,
+        "current_member": true
+    },
+    {"id": "3",
+        "name": "Jon Anderson",
+        "instrument": ["lead vocals", "guitar", "percussion", "harp"],
+        "year-joined": 1968,
+        "current_member": false
+    },
+    {"id": "4",
+        "name": "Rick Wakeman",
+        "instrument": "keyboards",
+        "year_joined": 1971,
+        "current_member": false
+    },
+    {"id": "5",
+        "name": "Alan White",
+        "instrument": ["drums", "percussion"],
+        "year_joined": 1972,
+        "current_member": true
+    },
+    {"id": "6",
+        "name": "Tony Kaye",
+        "instrument": ["organ", "Piano"],
+        "year_joined": 1968,
+        "current_member": false
+    },
+    {"id": "7",
+        "name": "Bill Bruford",
+        "instrument": ["drums", "percussion"],
+        "year_joined": ,
+        "current_member": false
+    },
+    {"id": "8",
+        "name": "Peter Banks",
+        "instrument": ["guitar", "backing vocals"],
+        "year_joined": 1968,
+        "current_member": false
+    },
+    {"id": "9",
+        "name": "Tony O'Reilly",
+        "instrument": "drums",
+        "year_joined": 1968,
+        "current_member": false
+    },
+    {"id": "10",
+        "name": "Patrick Moraz",
+        "instrument": "keyboards",
+        "year_joined": 1974,
+        "current_member": false
+    },
+    {"id": "11",
+        "name": "Trevor Horn",
+        "instrument": ["guitar", "backing vocals"],
+        "year_joined": 1980,
+        "current_member": false
+    },
+    {"id": "12",
+        "name": "Trevor Rabin",
+        "instrument": ["guitar", "backing vocals"],
+        "year_joined": 1982,
+        "current_member": false
+    },
+    {"id": "13",
+        "name": "Eddie Jobson",
+        "instrument": "keyboards",
+        "year_joined": 1983,
+        "current_member": false
+    },
+    {"id": "14",
+        "name": "Igor Khoroshev",
+        "instrument": ["keyboards", "backing vocals"],
+        "year_joined": 1997,
+        "current_member": false
+    },
+    {"id": "15",
+        "name": "Jon Davison",
+        "instrument": ["lead vocals", "guitar", "percussion"],
+        "year_joined": 2012,
+        "current_member": true
+    },
+    {"id": "16",
+        "name": "Benoît David",
+        "instrument": "lead vocals",
+        "year_joined": 2008,
+        "current_member": false
+    },
+    {"id": "17",
+        "name": "Geoff Downes",
+        "instrument": "keyboards",
+        "year_joined": 1980,
+        "current_member": true
+    },
+    {"id": "18",
+        "name": "Oliver Wakeman",
+        "instrument": "keyboards",
+        "year_joined": 2008,
+        "current_member": false
+    },
+
+    {"id": "19",
+        "name": "Billy Sherwood",
+        "instrument": ["bass", "keyboards", "guitar", "backing vocals"],
+        "year_joined": 1997,
+        "current_member": true
+    }
+]
