@@ -4,7 +4,7 @@ import "./style.css";
 function Header() {
     return (
       <header  className="header header-style">
-        <h1 class="heading-style">YES</h1>
+        <h2 className="heading-style text-center">Band Members</h2>
       </header>
     );
   }

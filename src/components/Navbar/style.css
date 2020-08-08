@@ -1,4 +1,5 @@
 .navbarStyle {
-  background: green;
+  background: rgb(106, 106, 235);
+  color: white;
   justify-content: flex-end;
 }

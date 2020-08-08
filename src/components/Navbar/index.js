@@ -3,7 +3,8 @@ import "./style.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbarStyle">
+    <nav className="navbarStyle">
+      <h1 className="text-center">YES</h1>
     </nav>
   );
 }
