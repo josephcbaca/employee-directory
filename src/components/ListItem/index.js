@@ -1,15 +1,19 @@
 import React from "react";
-import Row from "../Row";
+import band from "../db";
+import "./style.css";
 
-function ListItem(props) {
-    console.log(props.image)
+function ListItem() {
+
+
     return (
-        <div className="row" data-value={props.current}>
-            <img className="col-3" src={props.image}></img>
-            <h6 className="col-2">{props.name}</h6>
-            <h6 className="col-5">{props.instrument}</h6>
-            <h6 className="col-2">{props.joined}</h6>
-        </div>
+<div>
+    {band.map(member => <div class="row">
+        <img className="col-3" src={member.image}></img>
+        <h6 className="col-2">{member.name}</h6>
+        <h6 className="col-5">{member.instrument}</h6>
+        <h6 className="col-2">{member.year_joined}</h6>
+    </div>)}
+    </div>
     );
 }
 
