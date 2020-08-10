@@ -4,9 +4,9 @@ import "./style.css";
 
 function Section() {
   return (
-<div>
-  <List />
-</div>
+    <div>
+      <List />
+    </div>
   );
 }
 

@@ -1,37 +1,26 @@
 import React from "react";
-import Row from "../Row"
-
-let band = [
-    {
-        id: "1",
-        name: "Chris Squire",
-        instrument: ["bass", "backing vocals"],
-        year_joined: 1968,
-        current_member: false
-    },
-    {
-        id: "2",
-        name: "Steve Howe",
-        instruments: ["guitar", "backing vocals", "lap steel guitar"],
-        year_joined: 1970,
-        current_member: true
-    }
-];
+import Row from "../Row";
+import ListItem from "../ListItem";
+import band from "../db";
 
 function List() {
-
     return (
         <div>
             <Row>
-                <h3 className="col-4">Name</h3>
-                <h3 className="col-4">Instrument</h3>
-                <h3 className="col-4">Joined</h3>
+                <h5 className="col-3">Photo</h5>
+                <h5 className="col-2">Name</h5>
+                <h5 className="col-5">Instrument</h5>
+                <h5 className="col-2">Joined</h5>
             </Row>
-            <Row>
-                <h7 className="col-4">{band[0].name}</h7>
-                <h7 className="col-4">{band[0].instrument}</h7>
-                <h7 className="col-4">{band[0].year_joined}</h7>
-            </Row>
+
+            <ListItem
+                image={band[0].image}
+                name={band[0].name}
+                instrument={band[0].instrument}
+                joined={band[0].year_joined}
+                current={band[0].current_member}
+            />
+
         </div>
     );
 }
