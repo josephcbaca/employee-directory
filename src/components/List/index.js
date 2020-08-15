@@ -1,14 +1,11 @@
 import React from "react";
-import ListItem from "../ListItem";
-import ListHeader from "../ListHeader";
-import ButtonRow from "../ButtonRow";
+import ListRows from "../ListRows";
+import band from "../db";
 
 function List() {
     return (
         <div>
-            <ButtonRow />
-            <ListHeader />
-            <ListItem />
+            <ListRows band={band}/>
         </div>
     );
 }
