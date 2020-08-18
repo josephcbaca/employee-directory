@@ -8,44 +8,27 @@ function ListRows(props) {
     const [listRows, setListRows] = useState(props)
     const [order, setOrder] = useState(0)
 
-
-
     // Function to complete sorting and return sorted list
     function handleSortListYear() {
-        const orderList = ["original", "asc", "desc"]
+        const orderList = ["asc", "desc"]
         let newOrder = order + 1
 
-        if (newOrder === orderList.indexOf("asc")) {
-            // setListRows(listRows.sort((a, b) => a - b ))
-            setOrder(newOrder)
-        }
         if (newOrder === orderList.indexOf("desc")) {
-            // setListRows(listRows.sort((a, b) => a - b ))
-
-            setOrder(newOrder)
+            let ascending = listRows.band.sort((a, b) => {return a.year_joined-b.year_joined});
+            setListRows({band: ascending});
+            setOrder(newOrder);
         }
-        if(newOrder === orderList.length) {
-            setOrder(0)
+        if (newOrder === orderList.length) {
+            let descending = listRows.band.sort((a, b) => {return b.year_joined-a.year_joined});
+
+            setListRows({band: descending});
+            setOrder(0);
+
         }
-
-
-        // listRows.sort((a, b) =>
-        // if (a.year_joined < b.year_joined) {
-
-        // }
-        // //   if (a.year_joined < b.year_joined) {
-        // //     return -1;
-        // //   }
-        // //   if (a.year_joined > b.year_joined) {
-        // //     return 1;
-        // //   }
-        // //   return 0;
-        // // });
     }
 
     // Click handler that calls sortin function and updates state
     return (
-
         <div>
             <FormBtn
                 onClick={handleSortListYear}
