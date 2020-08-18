@@ -10,20 +10,18 @@ function ListRows(props) {
 
     // Function to complete sorting and return sorted list
     function handleSortListYear() {
-        const orderList = ["asc", "desc"]
+        const orderList = ["desc", "asc"]
         let newOrder = order + 1
 
-        if (newOrder === orderList.indexOf("desc")) {
+        if (newOrder === orderList.indexOf("asc")) {
             let ascending = listRows.band.sort((a, b) => {return a.year_joined-b.year_joined});
             setListRows({band: ascending});
             setOrder(newOrder);
         }
         if (newOrder === orderList.length) {
             let descending = listRows.band.sort((a, b) => {return b.year_joined-a.year_joined});
-
             setListRows({band: descending});
             setOrder(0);
-
         }
     }
 
